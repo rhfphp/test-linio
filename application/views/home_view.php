@@ -12,16 +12,13 @@
 	<h1>Welcome to Linio Test!</h1>
 
 	<div id="body">
-		<ul>
-			
-			<form method="post">
-				Initial: <input type="number" name="initial" value="<?=$this->input->post('initial')?>" /> 
-				End: <input  type="number" name="end" value="<?=$this->input->post('end')?>" />
-				<input type="submit" />
-			</form>
-			
-			<br />
-			
+		<form method="post">
+			Initial: <input type="number" name="initial" value="<?=$this->input->post('initial')?>" /> 
+			End: <input  type="number" name="end" value="<?=$this->input->post('end')?>" />
+			<input type="submit" />
+		</form>
+		
+		<ul>	
 			<?php foreach($numbers AS $d){ ?>
 			<li><?=$d?></li>
 			<?php } ?>
