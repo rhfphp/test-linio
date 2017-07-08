@@ -26,7 +26,7 @@ class Home extends CI_Controller {
 			
 			switch ($i) {
 				
-				case ($i % 3) == 0 AND ($i % 5) == 0:
+			    case ($i % 3) == 0 AND ($i % 5) == 0:
 			        $number = 'Linianos';
 			        break;
 				
